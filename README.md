@@ -21,13 +21,13 @@ To get started with Video Downloader, follow these steps:
 1. **Clone the Repository**: Clone this repository to your local machine using `git clone`.
 
     ```bash
-    git clone https://github.com/atharva026n /video-downloader.git
+    git clone https://github.com/atharva026/Video-Downloader
     ```
 
 2. **Navigate to the Directory**: Change into the project directory.
 
     ```bash
-    cd video-downloader
+    cd Video-Downloader
     ```
 
 3. **Install Dependencies**: Install the necessary dependencies.
