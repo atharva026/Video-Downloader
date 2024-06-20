@@ -33,7 +33,7 @@ To get started with Video Downloader, follow these steps:
 3. **Install Dependencies**: Install the necessary dependencies.
 
     ```bash
-    npm install flask pytube
+    pip install flask pytube
     ```
 
 ## Contact
