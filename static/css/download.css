@@ -1,0 +1,149 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* selector */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+h2{
+    padding-top:5%;
+    padding-bottom: 5px;
+    color: #000;
+}
+
+.main p{color: #000;}
+
+input{
+    margin: 2% 0;
+}
+
+input[placeholder]{
+    padding-left: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* id */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+#title {
+    background-color: #111111; /* try -> #212121*/ 
+    color: #EEEEEE;
+}
+
+#logo-space{
+    padding-right: 5%;
+}
+
+#content{
+    padding: 4% 0 5%;
+    text-align: center;
+    font-family: 'Montserrat-Medium',sans-serif;
+    background-color: #e3e3e3;
+}
+
+#download{
+    padding: 5% 5% 0  5%;
+    color: #fff;
+    background-color: #202020;
+    text-align: center;
+    font-family: 'Montserrat-Black',sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;  
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/* class */
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.btn{
+    margin: 1%;
+}
+.btn-danger:hover{
+    background-color:#ff0000;
+}
+
+.container{
+    padding: 1%;
+    font-family: 'Montserrat-Light',sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'Alkatra', cursive;
+    font-size: 1.6rem;
+    font-weight: bold ;
+}
+
+.nav-item{
+    padding: 0 10px;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+    font-family: 'Montserrat-Light',sans-serif;
+}
+
+.youtube-font{
+    font-family: 'Roboto-Bold', sans-serif; 
+    font-weight: bold;
+}
+
+.usebox{
+    padding: 5%;
+    text-align: center;
+    font-family: 'Montserrat-Light',sans-serif;
+    font-size: 1.3rem;
+}
+
+.number-icon{
+    border: 4px solid #a2a2a2 ;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin-bottom: 7%;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Instagram Page */
+/*-------------------------------------------------------------------------------------------------------------------*/
+.insta-font{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 900;
+}
+
+.btn-color{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+    color: #fff;
+}
+
+.btn-color:hover{
+    color: #fff;
+}
+
+
+/* Footer */
+
+#footer{
+    background-color: #383838;
+}
+
+footer a{
+    margin: 1.5%;
+    text-decoration: none;
+    color: gray;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .nav-link{
+        text-align: center;
+    }
+}

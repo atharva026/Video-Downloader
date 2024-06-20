@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+Video Downloader
+{% endblock title %}
+
+{% block css %}{{url_for('static', filename='css/download.css')}}{% endblock css %}
+
+
+{% block body %}
+<!-- Link Paste Section -->
+<section id="content">
+  <div class="main">
+    <h2 class="youtube-font">YouTube Downloader</h2>
+    <p>Paste the link of your favorite YouTube Video below and Download for free</p>
+
+    <form name="passlink" action="/download" method="post">
+      <input type="url" name="link" id="url" placeholder="Paste a Video URL here" style="width: 50%;" required>
+      <div class="action">
+        <input type="reset" class="btn btn-outline-dark" value="Clear">
+        <input type="submit" class="btn btn-danger" value="Download" />
+    </form>
+
+  </div>
+  </div>
+</section>
+
+<!-- How to Download -->
+<section id="download">
+  <h3 style="text-decoration: underline; margin-top: 1.5%;">How to Download?</h3>
+  <div class="row">
+    <div class="col-lg-4 usebox">
+      <i class=" number-icon fa-solid fa-1" style="color: #00fbef;"></i>
+      <p>Access YouTube from your browser or open YouTube app on your android device, After that Copy the video URL
+        you
+        wish to download.</p>
+    </div>
+    <div class="col-lg-4 usebox">
+      <i class=" number-icon fa-solid fa-2" style="color: #00fbef;"></i>
+      <p>Paste the Video URL in the input field / box.</p>
+    </div>
+    <div class="col-lg-4 usebox">
+      <i class=" number-icon fa-solid fa-3" style="color: #00fbef;"></i>
+      <p>Click on the Download button.</p>
+    </div>
+  </div>
+</section>
+{% endblock body %}

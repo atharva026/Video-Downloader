@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock title %}
+{% block css %}{{url_for('static', filename='css/index.css')}}{% endblock css %}
+{% block body %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+      <h1>Download Your Favorite Videos From Social Media</h1>
+      <a href="/youtube">
+        <button type="button" class="btn btn-outline-light btn-lg youtube youtube-font download-button">
+          <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>YouTube</button>
+      </a>
+      <button type="button" class="btn btn-outline-light btn-lg instagram insta-font download-button"><i
+          class="fa-brands fa-instagram" style="color: #ffffff;"></i>Instagram</button>
+    </div>
+    <div class="col-lg-6 d-none d-lg-block">
+      <img id="title-image" src="{{url_for('static', filename='images/Fr.png')}}" alt="Website in Mobile">
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- How to Download?-->
+<section class="" id="howtodownload">
+  <h2>How to Download?</h2>
+  <div class="row">
+    <div class="use-box col-lg-4">
+      <i class=" number-icon fa-solid fa-1" style="color: #005eff;"></i>
+      <p>Paste url into the search box</p>
+    </div>
+
+    <div class="use-box col-lg-4">
+      <i class="number-icon fa-solid fa-2" style="color: #ff0000;"></i>
+      <p>After pasting link you want to download and click "Download" button</p>
+    </div>
+
+    <div class="use-box col-lg-4">
+      <i class="number-icon fa-solid fa-3" style="color: #ff7200;"></i>
+      <p>Wait until the download is completed then check downloads on your Device</p>
+    </div>
+  </div>
+</section>
+
+<!-- Downloaders Silding  -->
+<section id="downloaders">
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <hr>
+        <h3 style="font-family: 'Roboto-Bold', sans-serif;font-weight: bold;">YouTube Downloader</h3>
+        <hr>
+        <p style="margin-top: 4%;">Youtube is not only the second largest search engine after the Google but also the
+          most popular site to host videos.You can find any type or industry video you wish to. The only sad part is
+          it doesn't allow you to download videos on its platform and that's where our YouTube Downloader comes in
+          place</p>
+        <button type="button" class="btn btn-outline-light btn-lg youtube youtube-font download-button">
+          <i class="fa-brands fa-youtube" style="color: #ff0000;"></i><a href="/youtube"
+            class="btn-decoration yt-deco">YouTube Downloader</a>
+        </button>
+      </div>
+      <div class="carousel-item">
+        <hr>
+        <h3 class="insta-font">Instagram Downloader</h3>
+        <hr>
+        <p style="margin-top: 4%;">Instagram downloader is a specially designed service for Instagram video download.
+          With it, you can save video from any public Instagram account to your device's storage. It is convenient and
+          free.</p>
+        <button type="button" class="btn btn-outline-light btn-lg instagram insta-font download-button">
+          <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+          <a href="/" aria-disabled="true" class="btn-decoration">Instagram Downloader</a>
+        </button>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Subscribe -->
+<section id="subscribe">
+  <div class="">
+    <h4>Subscribe to our mailing list</h4>
+    <input type="email" name="email" id="email" class="input-design">
+    <div>
+      <button class="btn-round">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}
